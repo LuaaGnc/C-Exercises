@@ -17,8 +17,8 @@ void main() {
     scanf("%lf", &k);
 
     for(int i = n; i > 0; i--) {
-        soma += 1/(double)i;
+        soma += 1/(double)k;
     }
 
-    printf("A soma de 1/%.3lf repetida %f vezes é igual a %.3lf", k, n, soma);
+    printf("A soma de 1/%.3lf repetida %.0f vezes é igual a %.5lf\n\n", k, n, soma);
 }
