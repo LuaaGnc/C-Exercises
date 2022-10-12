@@ -5,8 +5,8 @@ void  main(){
     printf("Digite um valor natural para n: ");
     scanf("%d", &n);
     while(i < n) {
-        i+= 1;
+        i += 1;
         j += i;
     }
-    printf("%d\n", j);
+    printf("A soma dos primeiros %d valores naturais é %d\n", n, j);
 }
