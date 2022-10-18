@@ -7,18 +7,22 @@ void main() {
     float n;
     double k, soma=0;
 
+    // Este algoritmo podia ser mais condensado mas não faz mal...
     printf("Digite um valor para N(limite superior): ");
     scanf("%f", &n);
     while((int)n <= 0){
         printf("Note que -->   N>0   <--\nDigite um valor para N(limite superior): ");
         scanf("%f", &n);
     }
-    printf("Digite um valor para K: ");
-    scanf("%lf", &k);
 
+    do{
+        printf("Digite um valor para K: ");
+        scanf("%lf", &k);
+    } while (k == 0);
+    
     for(int i = n; i > 0; i--) {
         soma += 1/(double)k;
     }
 
-    printf("A soma de 1/%.3lf repetida %.0f vezes é igual a %.5lf\n\n", k, n, soma);
+    printf("A soma de 1/%.3lf repetida %.0f vezes é igual a %.5lf .\n\n", k, n, soma);
 }
