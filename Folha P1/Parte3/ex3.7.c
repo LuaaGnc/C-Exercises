@@ -17,6 +17,5 @@ void main() {
         (num >= maior) ? maior = num : 0;   // Se for  num >= maior guarda no maior
     }
     
-
     printf("O maior em valor absoluto da sequência é %f.\n\n", maior);
 }
