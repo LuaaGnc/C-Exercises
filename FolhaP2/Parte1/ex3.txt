@@ -1,0 +1,32 @@
+3. Supondo que x=5, y=3 e z=8, determine o valor das seguintes expressões: 
+
+a) x == 5
+1 (True)
+
+b) x = 7
+x = 7
+
+c) x == z
+0 (False)
+
+d) x = z
+x = 8
+
+e) x<y && y<z
+0 && 1 (False && True)
+0 (False)
+
+f) z<x && x<y
+0 && 0 (False && False)
+0 (False)
+
+g) x = y<z
+x = 1
+
+h) !(x > y)
+!1 (Not True)
+0 (False)
+
+i) x>z && z<y
+0 && 0 (False && False)
+0 (False)
