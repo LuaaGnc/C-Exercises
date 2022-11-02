@@ -23,7 +23,7 @@ void main(){
     // stopValue != n+1 --> +1 (Para não parar logo que chegue no 5). Condição: Se verificar-se,, passa para as instruções abaixo
     while (stopValue != n+1){
         for(int i=1; i <= n; i++){
-            printf("%d\t", nInit);
+            printf("%d    ", nInit);
             nInit++;
         }
         printf("\n");
