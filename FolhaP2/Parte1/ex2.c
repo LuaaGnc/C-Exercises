@@ -20,7 +20,7 @@ typedef enum{FALSE, TRUE} boolean;
 void main(){
     //a) False=0, True = 1
     boolean L, L1, L2;
-    L == (L1 == FALSE && L2==FALSE) ? FALSE : TRUE;
+    L == (L1 == FALSE && L2==FALSE) ? TRUE : FALSE;
 
     //b)
     boolean VALOR;
