@@ -1,3 +1,5 @@
 # Para remover os arquivos desnecessários
 *.exe
 *.out
+*.exe.out
+*.o
