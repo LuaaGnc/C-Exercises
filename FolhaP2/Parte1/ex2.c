@@ -48,7 +48,7 @@ void main(){
     int m, n;
     boolean logic;
 
-    logic == (m = 2*n) ? TRUE : FALSE;
+    logic == (m == 2*n) ? TRUE : FALSE;
 
     //f)
     boolean bissexto;
