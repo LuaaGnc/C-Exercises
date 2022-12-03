@@ -1,27 +1,39 @@
 #include <stdio.h>
 
 
-void LerMatriz (float[][], int, int);
-void EscreverMatriz (float[][], int, int);
+int NumLinhas, NumColunas;
 
 void main(){
-    const NumLinhas, NumColunas;
-
     printf("Insira o número de linhas: ");
     scanf("%d", &NumLinhas);
     printf("Insira o número de colunas: ");
     scanf("%d", &NumLinhas);
 
+    //Protótipos de Função
+    void LerMatriz (float [][NumColunas], int, int);
+    void EscreverMatriz (float [][NumColunas], int, int);
+
     float v[NumLinhas][NumColunas];
 
     LerMatriz(v, NumLinhas, NumColunas);
+    EscreverMatriz(v, NumLinhas, NumColunas);
 
+    printf("\n\n");
 }
 
 
-void LerMatriz (float v[][], int nL, int nC){
+void LerMatriz (float v[][NumColunas], int nL, int nC){
     for(int c = 0; c < nC; c++)
         for(int l = 0; l < nL; l++)
             scanf("%f", &v[l][c]);
 }
-/* void EscreverMatriz (float[][], int, int); */
+
+
+void EscreverMatriz(float v[][NumColunas], int nL, int nC){
+    for(int c = 0; c < nC; c++){
+        printf("|");
+        for(int l = 0; l < nL; l++)
+            printf("%f ", v[l][c]);
+        printf("|\n");
+    }
+}
