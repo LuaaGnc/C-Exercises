@@ -7,7 +7,7 @@ void main(){
     printf("Insira o número de linhas: ");
     scanf("%d", &NumLinhas);
     printf("Insira o número de colunas: ");
-    scanf("%d", &NumLinhas);
+    scanf("%d", &NumColunas);
 
     //Protótipos de Função
     void LerMatriz (float [][NumColunas], int, int);
@@ -23,16 +23,18 @@ void main(){
 
 
 void LerMatriz (float v[][NumColunas], int nL, int nC){
-    for(int c = 0; c < nC; c++)
-        for(int l = 0; l < nL; l++)
+    printf("Digite os números: \n");
+    for(int l = 0; l < nL; l++)
+        for(int c = 0; c < nC; c++)
             scanf("%f", &v[l][c]);
+
 }
 
 
 void EscreverMatriz(float v[][NumColunas], int nL, int nC){
-    for(int c = 0; c < nC; c++){
+    for(int l = 0; l < nL; l++){
         printf("|");
-        for(int l = 0; l < nL; l++)
+        for(int c = 0; c < nC; c++)
             printf("%f ", v[l][c]);
         printf("|\n");
     }
