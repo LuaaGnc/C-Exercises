@@ -25,6 +25,6 @@ int SomaElementosVector(int *p, int dim){
     int soma = 0;
     for(int _ = 0; _ < dim; _++)
         soma+= p[_];
-
+        
     return soma;
 }

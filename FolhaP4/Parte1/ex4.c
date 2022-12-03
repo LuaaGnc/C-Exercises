@@ -34,7 +34,6 @@ int PosicaoMaximoVector (int v[], int dim){
             posmaior = k;
         }
     }
-
     return posmaior;
 }
 
@@ -53,6 +52,5 @@ int PosicaoMinimoVector (int v[], int dim){
             posmenor = k;
         }
     }
-
     return posmenor;
 }

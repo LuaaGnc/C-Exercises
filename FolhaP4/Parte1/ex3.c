@@ -31,7 +31,6 @@ int MaximoElementoVector (int v[], int dim){
         if(v[k] > maior)
             maior = v[k];
     }
-
     return maior;
 }
 
@@ -47,6 +46,5 @@ int MinimoElementoVector (int v[], int dim){
         if(v[k] < menor)
             menor = v[k];
     }
-
     return menor;
 }

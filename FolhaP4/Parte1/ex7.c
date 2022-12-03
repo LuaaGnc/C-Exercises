@@ -27,7 +27,6 @@ void LerMatriz (float v[][NumColunas], int nL, int nC){
     for(int l = 0; l < nL; l++)
         for(int c = 0; c < nC; c++)
             scanf("%f", &v[l][c]);
-
 }
 
 
