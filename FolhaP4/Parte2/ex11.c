@@ -20,8 +20,8 @@ void main(){
     // && --> imprimo as posições da matriz que têm elementos nulos
     
 
-    LerMatriz(v, NumLinhas, NumLinhas);
-    ElemNulos(v, NumLinhas, NumLinhas);
+    LerMatriz(v, NumLinhas, NumColunas);
+    ElemNulos(v, NumLinhas, NumColunas);
     
 }
 
