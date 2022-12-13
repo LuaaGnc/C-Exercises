@@ -3,6 +3,8 @@
 
 #define DIM 70
 
+void invert(char *);
+
 void main(){
     char frase[DIM];
     char *fr;

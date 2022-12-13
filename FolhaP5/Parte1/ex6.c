@@ -3,6 +3,8 @@
 
 #define DIM 70
 
+int contadigitos(char *);
+
 void main(){
     char frase[DIM];
     char *conta;

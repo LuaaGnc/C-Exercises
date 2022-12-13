@@ -12,6 +12,8 @@ FACES DA MESMA MOEDA".
 
 void conversor(char []);
 
+void conversor(char []);
+
 void main(){
     char frase[DIM];
     

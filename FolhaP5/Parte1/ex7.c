@@ -10,6 +10,8 @@
 e 0 se não é.
 */
 
+int capicua(char *);
+
 void main(){
     char frase[DIM];
     char *fr;

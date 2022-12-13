@@ -6,6 +6,7 @@
 // exemplo, “ver” é uma substring de “universo”.
 #define DIM 50
 
+int doTheThing(char *, char *);
 
 void main(){
     char a[DIM], b[DIM];
