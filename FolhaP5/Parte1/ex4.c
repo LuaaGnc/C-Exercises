@@ -26,9 +26,6 @@ void main(){
 
 int doTheThing(char *a, char *b){
     int tamanhoA = strlen(a), tamanhoB = strlen(b), check = 1, i_init;
-    /* for(int _ = 0; _ < DIM; _++){if(*(a+_) != '\0') tamanhoA++;}
-    for(int _1 = 0; _1 < DIM; _1++){if(*(b+_1) != '\0') tamanhoB++;}
-    */
    
     if(tamanhoA > tamanhoB)
         return 0;
@@ -42,12 +39,11 @@ int doTheThing(char *a, char *b){
                 printf("k = %d", k);
                 if(*(b+i_init+1) == *(a+k)){
                     check++;
-                    i_init++;   // Just to solve my errors here...
+                    i_init++;
                 }
                 if(tamanhoA == check) return 1;
             }
         }
     }
-    /* printf("tamanhoA=%d    check=%d\n", tamanhoA, check); */
     return (check == tamanhoA) ? 1 : 0;
 }
