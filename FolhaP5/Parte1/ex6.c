@@ -8,7 +8,7 @@ void main(){
     char *conta;
     conta = &frase[0];
     
-    printf("Insira seu nome: ");
+    printf("Insira a frase: ");
     gets(frase);
 
     printf("O número de dígitos na frase inserida é %d\n\n", contadigitos(conta));

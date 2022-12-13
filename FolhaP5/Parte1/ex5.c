@@ -8,7 +8,7 @@ void main(){
     char *fr;
     fr = &frase[0];
     
-    printf("Insira seu nome: ");
+    printf("Insira a frase: ");
     gets(frase);
 
     printf("A frase invertida é ");
