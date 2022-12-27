@@ -9,7 +9,7 @@ carácter na string.
 
 #define DIM 70
 
-int contacaracteres(char *, char *);
+int contacaracteres(char *, const char *);
 
 int main(){
     char frase[DIM], caractere[1];
@@ -30,7 +30,7 @@ int main(){
 }
 
 
-int contacaracteres(char *fr, char *c){
+int contacaracteres(char *fr, const char *c){
     int contador = 0;
     for(int k = 0; k < strlen(fr); k++){
         if(*(fr+k) == *c){
